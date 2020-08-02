@@ -10,7 +10,7 @@ const Header = ({ toggleTheme }) => {
 
   return (
     <Container>
-      Hello World
+      <h1>ThemeSwitch</h1>
 
       <Switch
         onChange={toggleTheme}
