@@ -7,6 +7,7 @@ import dark from './styles/themes/dark';
 import usePersistedState from './Hooks/usePersistedState';
 import Header from './components/Header';
 import Content from './components/Content';
+import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = usePersistedState('theme', light)
@@ -21,6 +22,7 @@ function App() {
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} />
         <Content />
+        <Footer />
       </div>
     </ThemeProvider>
   );
